@@ -1,3 +1,14 @@
+var myNav = document.getElementById('mynav');
+window.onscroll = function () { 
+    if (document.documentElement.scrollTop >= 30 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("transparent");
+    } 
+    else {
+        myNav.classList.add("transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
 document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
